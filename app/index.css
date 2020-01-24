@@ -7,3 +7,13 @@ h1 {
   font-family: "ColaborateThinRegular", Arial, sans-serif;
   color: #4995cf;
 }
+
+.first-column {
+  width: 40%;
+  float: left;
+}
+
+.second-column {
+  width: 40%;
+  float: right;
+}

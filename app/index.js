@@ -1,3 +1,4 @@
+import "@babel/polyfill";
 import React, {Component} from 'react';
 import ReactDOM from 'react-dom';
 import Form from 'react-bootstrap/Form';
@@ -32,14 +33,13 @@ import './index.css';
       <Navbar bg="light" expand="lg">
       <Navbar.Brand>Kindergarten St. Johannes</Navbar.Brand>
       </Navbar>
-        <div class="container">
-        <div class="row">
+
+<div class="container">
+<div class="modal-body row">
+<div class="first-column">
         <div className = 'Registration'>
         <h1>Anmelden</h1>
         </div>
-        </div>
-        <div class="container">
-        <div class="row">
         <Form action="/einfügen" method="POST">
         <Form.Group>
           <Form.Label>
@@ -104,9 +104,15 @@ import './index.css';
           <input type = "submit" value = "Anmeldung abschicken" />
         </Form>
         </div>
+        <div class="second-column">
+        <div className = 'Login'>
+        <h1>Login</h1>
         </div>
         </div>
-      </div>
+        </div>
+        </div>
+        </div>
+
     )
   }
 }
