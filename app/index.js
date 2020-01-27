@@ -31,7 +31,7 @@ import './index.css';
     return (
       <div className="App">
       <Navbar bg="light" expand="lg">
-      <Navbar.Brand>Kindergarten St. Johannes</Navbar.Brand>
+      <Navbar.Brand>Kindergarten [ ] </Navbar.Brand>
       </Navbar>
 
 <div class="container">
@@ -88,16 +88,6 @@ import './index.css';
                 name="email"
                 type="email"
                 value={this.state.email}
-                onChange={this.handleRegistrationInput} />
-          </Form.Label>
-          </Form.Group>
-          <Form.Group>
-          <Form.Label>
-            Passwort:
-              <Form.Control
-                name="password"
-                type="password"
-                value={this.state.password}
                 onChange={this.handleRegistrationInput} />
           </Form.Label>
           </Form.Group>
