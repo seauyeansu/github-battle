@@ -94,11 +94,6 @@ import './index.css';
           <input type = "submit" value = "Anmeldung abschicken" />
         </Form>
         </div>
-        <div class="second-column">
-        <div className = 'Login'>
-        <h1>Login</h1>
-        </div>
-        </div>
         </div>
         </div>
         </div>
