@@ -17,7 +17,6 @@ import './index.css';
           {groupName:''},
           {firstNameofChild: ''},
           {email: ''},
-          {password: ''}
         ]
       }
     }
@@ -97,6 +96,7 @@ import './index.css';
         </div>
         </div>
         </div>
+
 
     )
   }
