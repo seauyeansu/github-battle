@@ -23,12 +23,14 @@ def index():
         firstNameofChild = details['firstNameofChild']
         groupName = details['groupName']
         email = details['email']
+        html = 'Name der Mutter: {} <br/> Name des Vaters: {} </br> Vorname des Kindes: {} </br> Gruppenname: {} </br> Email: {} </br> Deine Anmeldung ist erfolgreich!'
+        result = html.format(motherName, fatherName, firstNameofChild, groupName, email)
         cursor = mysql.connection.cursor()
         values = (motherName, fatherName, firstNameofChild, groupName, email,)
         cursor.execute("INSERT INTO parents (motherName,fatherName,firstNameofChild,groupName,email) VALUES (%s, %s, %s, %s, %s)", values)
         mysql.connection.commit()
         cursor.close()
-        return 'Geschafft!'
+        return result
 
 
 if __name__ == '__main__':
